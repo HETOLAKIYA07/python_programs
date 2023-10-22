@@ -1,3 +1,10 @@
+##########################################################
+#                                                        #
+#               develop by:- olakiya het                 #
+#               email:- olakiyahet@gmail.com             #
+#               github:- HETOLAKIYA007                   #            
+##########################################################
+
 import rembg
 import os
 import socket
@@ -66,7 +73,7 @@ class BackgroundRemoverApp:
     # Set up the offline UI elements
         offline_label = tk.Label(self.root, text="Offline Mode", font=("times new roman", 20))
         offline_label.pack(side="top", pady=100)
-
+####################################################################################################
         
     def select_folder_and_process(self):
         folder_path = filedialog.askdirectory(title="Select Folder")
@@ -164,7 +171,7 @@ class BackgroundRemoverApp:
         if not self.processed_image_path:
             return
 
-        output_folder = filedialog.askdirectory(title="Select Your Output Folder")
+        output_folder = filedialog.askdirectory(title="Select Your Output Folder")                        
         if output_folder:
             img_name = os.path.basename(self.processed_image_path)
             new_output_path = os.path.join(output_folder, img_name)
@@ -192,6 +199,7 @@ class BackgroundRemoverApp:
             os.remove(self.processed_image_path)  # Remove the processed image
             self.processed_image_path = None
         self.root.destroy()
+        ###########################################################################
 if __name__ == "__main__":
     root = tk.Tk()
     app = BackgroundRemoverApp(root)
