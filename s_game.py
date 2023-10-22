@@ -1,3 +1,10 @@
+##########################################################
+#                                                        #
+#               develop by:- olakiya het                 #
+#               email:- olakiyahet@gmail.com             #
+#               github:- HETOLAKIYA007                   #            
+##########################################################
+
 import curses
 import random
 import time
